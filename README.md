@@ -50,7 +50,7 @@ where $W(1) = 1$.
 
 **TODO: your answer goes here**
   When a = b = 2,
-    $f(n) = 1$ => $W(n) = O(n\log n)$
+    $f(n) = 1$ => $W(n) = O(n)$
     $f(n) = \log n$ => $W(n) = O(n\log n)$
     $f(n) = n$ => $W(n) = O(n^2)$
     
@@ -82,7 +82,7 @@ where $W(1) = 1$.
       316
       464
   
-  This data is consistant with the derived values when graphed. The linear portion seems to dominate when $f(n) = 1% and $f(n) = \log n$. When $f(n) = n$, the data seems to increase with a polynomial type behavior.
+  This data is consistant with the derived values when graphed. The linear portion seems to dominate when $f(n) = 1% and $f(n) = \log n$. When $f(n) = n$, the data seems to increase with a polynomial or quadratic type behavior.
 
 - [ ] 5. (4 points) Now that you have a nice way to empirically generate values of $W(n)$, we can look at the relationship between $a$, $b$, and $f(n)$. Suppose that $f(n) = n^c$. What is the asypmptotic behavior of $W(n)$ if $c < \log_b a$? What about $c > \log_b a$? And if they are equal? Modify `compare_work` to compare empirical values for different work functions (at several different values of $n$) to justify your answer. 
 
@@ -107,8 +107,8 @@ where $W(1) = 1$.
 
 **TODO: your answer goes here**
   When a = b = 2,
-    $f(n) = 1$ => $S(n) = O(n)$
-    $f(n) = \log n$ => $S(n) = O(n)$
+    $f(n) = 1$ => $S(n) = O(\log n)$
+    $f(n) = \log n$ => $S(n) = O((\log n)^2)$
     $f(n) = n$ => $S(n) = (n\log n)$
   
   Span:
@@ -140,4 +140,4 @@ where $W(1) = 1$.
       116
       137
   
-  After graphing, this data supports my derived values as all of the functions exhibit somewhat linear behavior as n increases.
+  After graphing, this data supports my derived values as all of the functions exhibit logaritmic behavior except for f(n) = 1 which is particularly linear.
